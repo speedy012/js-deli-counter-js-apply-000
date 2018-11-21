@@ -1,13 +1,12 @@
 function takeANumber (currentLinePlace,custName) {
-  if (currentLinePlace.length > 0);
      currentLinePlace.push(custName);
     return 'Welcome, ' + custName + '. You are number ' + currentLinePlace.length + ' in line.'
  }
  
  function nowServing (currentLinePlace){
-   if (currentLinePlace.length === 0)
+   if (currentLinePlace.length === 0) {
    return 'There is nobody waiting to be served!';
-
+}
  var customer = currentLinePlace.shift();
  return 'Currently serving ' + customer + '.';
  }
